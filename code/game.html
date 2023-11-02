@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/png" href="images/bf.png">
+    <title>Jeu de Devinettes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: radial-gradient(circle, rgba(169,66,213,1) 14%, rgba(244,60,231,1) 66%);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #container {
+            width: 350px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 2px solid #333;
+            border-radius: 5px;
+        }
+
+        #result {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        #input {
+            width: 150px;
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+            justify-content: center;
+        }
+
+        #button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .footer {
+        /* Styles pour le footer */
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        }
+
+        .footer-button {
+            /* Styles pour le bouton */
+            display: inline-block;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .footer-button:hover {
+            background-color: #0056b3;
+        }
+        .navbar {
+            background: linear-gradient(0deg, rgba(148,50,217,1) 9%, rgba(244,60,209,1) 73%);
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar button {
+            display: flex;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 auto;
+            display: block;
+            cursor: pointer;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+        <a href="index.html">Accueil</a>
+    </div>
+    <h1>Jeu de Devinettes</h1>
+    <div id="container">
+        <p>Devinez le nombre entre 1 et 100 :</p>
+        <input type="number" id="input" min="1" max="100">
+        <button id="button">Devinez</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        const randomNumber = Math.floor(Math.random() * 100) + 1;
+        const result = document.getElementById('result');
+        const input = document.getElementById('input');
+        const button = document.getElementById('button');
+        let attempts = 0;
+
+        button.addEventListener('click', () => {
+            const guess = parseInt(input.value);
+            attempts++;
+
+            if (isNaN(guess) || guess < 1 || guess > 100) {
+                result.textContent = 'Entrez un nombre valide entre 1 et 100.';
+            } else if (guess === randomNumber) {
+                result.textContent = `Bravo ! Vous avez deviné le nombre en ${attempts} tentatives.`;
+                button.disabled = true;
+            } else if (guess < randomNumber) {
+                result.textContent = 'Le nombre est plus grand.';
+            } else {
+                result.textContent = 'Le nombre est plus petit.';
+            }
+        });
+    </script>
+
+</body>
+</html>

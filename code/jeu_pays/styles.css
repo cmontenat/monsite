@@ -1,0 +1,61 @@
+body{
+    font-family:Verdana,Arial,Sans;
+    font-size:50px;
+    background: linear-gradient(90deg, rgba(206,144,82,1) 28%, rgba(221,232,43,1) 42%, rgba(69,253,0,1) 56%, rgba(0,253,216,1) 70%, rgba(0,14,253,1) 84%, rgba(208,0,253,1) 98%);
+}
+
+#titre{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+h1 {
+    display: flex;
+    font-size:xx-large;
+    justify-content: center;
+}
+p {
+    display: flex;
+    font-size: large;
+    justify-content: center;
+}
+
+
+#listes{
+    display:flex;
+    justify-content: center;
+}
+
+#carte{
+    display:flex;
+    justify-content: center;
+}
+
+#boutons{
+    display: flex;
+    justify-content: center;
+    margin-top:30px;
+    gap: 5px;
+}
+
+.OK{
+    background: #00f725;
+}
+
+.NOK{
+    background: #FF0000
+}
+#boutonReset, #boutonValider {
+    display: flex;
+    height: 50px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: violet;
+}
+#boutonReset:hover, #boutonValider:hover {
+    background-color: rgb(255, 0, 255);
+}
+#boutonReset:active, #boutonValider:active {
+    background-color: rgb(164, 0, 164);
+}

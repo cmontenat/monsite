@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="images/bf.png">
+        <title>Sections sur l'Autisme</title>
+        <style>
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .section {
+                flex: 1;
+                min-width: 30%;
+                margin: 10px;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                
+            }
+
+            .meaning {
+                background-color: #FAD02E; /* Jaune */
+            }
+
+            .school {
+                background-color: #4CAF50; /* Vert */
+            }
+
+            .work {
+                background-color: #3498DB; /* Bleu */
+            }
+
+            h2 {
+                color: #000000; /* Texte blanc sur fond coloré */
+                display: flex;
+                justify-content: center;
+            }
+            h3 {
+                display: flex;
+                justify-content: center;
+            }
+            .avantage{
+                background-color: darkmagenta;
+            }
+            .histoire{
+                background-color: darkred;
+            }
+            #table{
+                display: flex;
+                justify-content: center;
+
+            }
+            #cerveau{
+                display: flex;
+                width: 300px;
+                justify-content: center;
+                padding-left: 200px;
+            }
+            .image-container {
+                background-color: #3498db; /* Couleur bleue comme exemple */
+                width: 1400px; /* Largeur de la div en pixels */
+                height: 700px; /* Hauteur de la div en pixels */
+                display: flex;
+                justify-content: center;
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+            .navbar {
+                background: linear-gradient(0deg, rgba(148,50,217,1) 9%, rgba(244,60,209,1) 73%);
+                overflow: hidden;
+            }
+
+            .navbar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .navbar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .navbar button {
+                display: flex;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                margin: 0 auto;
+                display: block;
+                cursor: pointer;
+                justify-content: center;
+            }
+            .case1{
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                width: 1500px;
+                justify-content: center;
+            }
+            .case3{
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                width: 1500px;
+                justify-content: center;
+            }
+
+            figcaption{
+                width: 200px;
+                height: 100px;
+            }
+            #figcaption{
+                width: 200px;
+                height: 100px;
+            }
+            .info{
+                margin: 0px, 15px, 10px, 10px;
+            }
+            .page1{
+                display: flex;
+                flex-direction: column;
+                width: 750px;
+                margin-right: 30px;
+                justify-content: center;
+                margin-top: 25px;
+            }
+            .pageentière{
+                display: flex;
+                flex-direction: row;
+                background-color: rgb(0, 0, 0);
+            }
+            .page11{
+                display: flex;
+                flex-direction: column;
+                width: 750px;
+                margin-left: 20px;
+                margin-right: 20px;
+                
+            }
+            .ligne11{
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 10px;
+            }
+            .cases{
+                display: flex;
+                flex-direction: column;
+                width: 200px;
+                margin-right: 50px;
+            }
+            .case11{
+                background-color: rgb(0, 0, 0);
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+            .ligne22{
+                background-color: rgb(0, 0, 0);
+                margin-bottom: 20px;
+            }
+            .casse11{
+                background-color: rgb(0, 0, 0);
+                margin-bottom: 20px;
+            }
+            .casse22{
+                background-color: rgb(0, 0, 0)
+                ;
+            }
+            .text1{
+                background-color: rgb(0, 0, 0);
+                margin-left: 20px;
+                height: 292.5px;
+            }
+            .element11{
+                background-color: rgb(0, 0, 0);
+                margin-bottom: 20px;
+                
+            }
+            .element33{
+                background-color: rgb(0, 0, 0);
+                margin-top: 20px;
+            }
+            .ttitre{
+                background-color: rgb(0, 0, 0);
+            }
+            #caqse{
+                border-radius: 10px;
+                border-color: rgb(255, 0, 136);
+                border-style:groove;
+
+            }
+            .element22{
+                justify-content: center;
+                margin-bottom: 0px;
+            }
+            .textefiche{
+                color: #ffffff;
+                padding-left: 10px;
+            }
+            .tttitre{
+                color: rgb(228, 35, 193);
+                padding-left: 10px;
+            }
+            #personnageChloé{
+                display: flex;
+                padding-left: 300px;
+            }
+            .autree{ 
+                display: flex;
+                justify-content: center;
+            }
+            p{
+                display: flex;
+                justify-content: center;
+                text-align: justify;
+                line-height: 1.5;/*espace entre les lignes*/
+            }
+            html{
+                width: 1530px;
+            }
+            .debut{
+                width: 500px;
+                padding-left: 500px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="index.html">Accueil</a>
+            <a href="#informatique">autiste informatique</a>
+            <a href="#supposé">supposé autiste</a>
+            <a href="#definition">Définition</a>
+            <a href="#signification">signification</a>
+            <a href="#aspergirl">aspergirl</a>
+            <a href="#personnageChloé">personnage Chloé</a>
+        </div>
+        <div>
+            <h2>Les aspergers-célèbres</h2>
+            <p class="debut">
+                "Si l'on supprimait les gènes qui sont à l'origine de l'autisme ou d'autres troubles comme la psychose maniaco-dépressive, le monde appartiendrait aux conformistes ennuyeux sans pensée originale.
+            </p>
+            <p class="debut">Temple Grandin "Penser en images: Et autres témoignages sur l'autisme, 1995</p>
+            <h3>Les ASPERGERS CONFIRMÉS</h3>
+            <p class="debut">
+                «En réalité, je vis des hauts formidables, des bas terribles et un stress permanent. Vous n’aimeriez pas connaître les deux derniers états par lesquels je passe» 
+            </p>
+            <p class="debut">Elon Musk</p>
+        </div>
+        <div class="case1">
+            <div class="info ">
+                <img src="images/physicien.jpg"width="200px" height="150px">
+                <figcaption>Albert Einstein Physicien théoricien</figcaption>
+            </div>
+            <div class="info ">
+                <img src="images/pianiste.jpg" width="200px" height="150px">
+                <figcaption>Glenn Cloud Pianiste</figcaption>
+            </div>
+            <div class="info ">
+                <img src="images/écrivant.jpg" width="200px" height="150px">
+                <figcaption>Daniel Tammet Écrivain, poète, polyglotte</figcaption>
+            </div>
+            <div class=" info ">
+                <img src="images/champion.jpg" width="200px" height="150px">
+                <figcaption>Bobby Fischer Champion, Jouer d'échecs</figcaption>
+            </div>
+        </div>
+        <div class="case1">
+            <div class="info ">
+                <img src="images/acteur.jpg" width="200px" height="150px">
+                <figcaption>Anthony Hopkins Acteur, réalisateur</figcaption>
+            </div>
+            <div class="info ">
+                <img src="images/voyageur.jpg" width="200px" height="150px">
+                <figcaption>Josef Schovanec Ecrivain français et voyageur</figcaption>
+            </div>
+            <div class="info ">
+                <img src="images/prof.jpg" width="200px" height="150px">
+                <figcaption>Temple Grandin Professeure de zootechnie</figcaption>
+            </div>
+            <div class="info ">
+                <img src="images/greta.png" width="200px" height="150px">
+                <figcaption>Greta Thunberg Militante écologiste</figcaption>
+            </div>
+        </div>
+        <div>
+            <h2 id="informatique">Les ASPERGERS dans l’informatique...</h2>
+        </div>
+        <div class="case1">
+            <div class="info ">
+                <img src="images/créateur.jpg" width="200px" height="150px">
+                <figcaption>Bram Cohen Créateur du BitTorrent</figcaption>
+            </div>
+            <div class="info ">
+                <img src="images/pirate.jpg" width="200px" height="150px">
+                <figcaption>Gary McKinnon Pirate informatique</figcaption>
+            </div>
+            <div class="info ">
+                <img src="images/analyste.jpg" width="200px" height="150px">
+                <figcaption>Adrian Lamo Analyste, pirate informatique</figcaption>
+            </div>
+            <div class=" info ">
+                <img src="images/producteur.jpg" width="200px" height="150px">
+                <figcaption>Satoshi Tajiri Créateur et producteur de jeu</figcaption>
+            </div>
+        </div>
+        <div class="case1">
+            <div class="info ">
+                <img src="images/microsoft.jpg"width="200px" height="150px">
+                <figcaption>Bill Gates Fondateur Microsoft</figcaption>
+            </div>
+            <div class="info ">
+                <img src="images/facebook.jpg" width="200px" height="150px">
+                <figcaption>Mark zuckerberg Fondateur facebook</figcaption>
+            </div>
+            <div class="info ">
+                <img src="images/tesla.jpg" width="200px" height="150px">
+                <figcaption>Elon Musk Fondateur de Tesla</figcaption>
+            </div>
+            <div class="info ">
+                <img src="images/apple.jpg" width="200px" height="150px">
+                <figcaption>Steeve Jobs Inventeur Apple</figcaption>
+            </div>
+        </div>
+        <div>
+            <h2 id="supposé">ASPERGERS SUPPOSÉS</h2>
+        </div>
+        <div class="case1">
+            <div class="info ">
+                <img src="images/chimiste.jpg" width="200px" height="150px">
+                <figcaption>Marie Curie Physicienne et chimiste</figcaption>
+            </div>
+            <div class="info ">
+                <img src="images/scénariste.jpg" width="200px" height="150px">
+                <figcaption>Woody Allen Réalisateur, scénariste</figcaption>
+            </div>
+            <div class="info ">
+                <img src="images/artiste.jpg" width="200px" height="150px">
+                <figcaption>Andy Warhol Artiste</figcaption>
+            </div>
+            <div class=" info ">
+                <img src="images/photographe.jpg" width="200px" height="150px">
+                <figcaption>Stanley Kubrick Réalisateur, photographe, scénariste</figcaption>
+            </div>
+        </div>
+        <div class="case1">
+            <div class="info ">
+                <img src="images/artiste2.jpg" width="200px" height="150px">
+                <figcaption>Vincent Van Gogh Artiste</figcaption>
+            </div>
+        </div>
+        <div class="case3">
+            <div id="definition" class="page1">
+                <h2>Définition du syndrome d'Asperger</h2>
+                <p>Le Syndrome d'Asperger fait partie des Troubles du spectre de l’autisme (TSA), qui recouvrent un champ très large et de nombreuses variations. En effet, si certains autistes souffrent de formes sévères avec un handicap important, ce n’est pas le cas des autistes Asperger, qui n’ont aucun trouble du développement intellectuel, ni handicap. 
+                </p>
+                <h2>Syndrome d'Asperger : une différence et non une maladie
+                </h2>
+                <p>On estime que 1% de personnes seraient autistes en France, parmi lesquelles 7 à 10% seraient Asperger.
+                    Ce Syndrome les amène à avoir un autre rapport au monde et à autrui. 
+                   Schématiquement, le cerveau absorbe et traite une masse inouïe d’informations cognitives et sensorielles. Lorsqu’il sature, il privilégie le détail au détriment de l’ensemble du contexte.
+                   </p>
+            </div>
+            <div class="page1">
+                <img id="signification" src="images/autisme.jpg" width="200px" height="150px">
+                <h2>C'est quoi, une personne Asperger ?</h2>
+                <p>
+                    Ce qui est particulièrement complexe à appréhender pour les autistes Asperger, ce sont les interactions sociales, le jeu des conventions sociales, et la communication avec autrui.
+                    Cela peut donner lieu à des quiproquos ou à une franchise abrupte, sans filtre, voire à un comportement incongru, comme dire à son interlocuteur que sa conversation est ennuyeuse et tourner les talons ou croiser un voisin dans la rue sans le saluer, faute de l’avoir reconnu, ou encore faire bande à part à la cantine ou lors de pots au bureau.
+                    Ce qui est particulièrement complexe à appréhender pour les autistes Asperger, ce sont les interactions sociales, le jeu des conventions sociales, et la communication avec autrui.
+                    Cela peut donner lieu à des quiproquos ou à une franchise abrupte, sans filtre, voire à un comportement incongru, comme dire à son interlocuteur que sa conversation est ennuyeuse et tourner les talons ou croiser un voisin dans la rue sans le saluer, faute de l’avoir reconnu, ou encore faire bande à part à la cantine ou lors de pots au bureau.
+                </p>
+            </div>
+        </div>
+        <div class="case3">
+            <div  class="page1">
+                <p>
+                   
+                </p>
+                <h2>Ce qu'on dit du QI des autistes Asperger</h2>
+                <p>
+                    Il est souvent vrai que les personnes Asperger ont un QI supérieur à la moyenne. Si tous n’ont pas l’étoffe de Nobel, beaucoup disposent de capacités mnésiques et d’analyse prodigieuses ou de dons musicaux (oreille absolue, aptitude à apprendre seul à jouer d’un instrument, à dessiner en détail une cathédrale de mémoire…). 
+
+                    Reste que cette intelligence exceptionnelle n’est souvent pas reconnue, ou tardivement, notamment professionnellement, du fait de la maladresse dans les interactions sociales.
+                </p>
+                <img id="cerveau" src="images/cerveau.jpg" width="300px" height="150px">
+                <p>
+                    Sur le plan cognitif, les Asperger ont un fonctionnement intellectuel se situant dans la moyenne, mais il arrive, et c’est apparemment le cas d’Elon Musk, que le niveau intellectuel se situe « dans la tranche supérieure de la population », en association avec « une capacité mnésique excellente ainsi qu’une capacité à développer des passions et des talents remarquables ».
+
+                    Et selon le Dr Asperger, dont les travaux n’ont été diffusés que dans les années 80, « ces individus extravagants peuvent atteindre un certain niveau de réussite et s’intégrer socialement ». 
+                    Sur le plan neurosensoriel, l’autisme Asperger se caractérise par une hyper ou hyposensibilité de certains sens (vue, ouïe, toucher, goût, odorat), des gestes souvent maladroits, une posture particulière, une expression du visage souvent figée et peu vivante ». Mais aussi une « tendance forte à l’intellectualisation des sentiments, des ressentis et des sensations, des difficultés à regarder l’interlocuteur dans les yeux, des tics moteurs, de possibles difficultés à reconnaître les visages (prosopagnosie) ».
+
+                </p>
+                <h2 id="aspergirl">"Aspie girls " : pourquoi les femmes Asperger sont sous diagnostiquées ?</h2>
+                <p>1 femme serait Asperger pour 4 hommes. La raison? Elles se démènent pour s’adapter et donner le change, en excellant dans l’art du mimétisme.</p>
+            </div>
+
+        </div>
+       
+                <div class="image-container">
+                    <!-- Vous pouvez insérer votre image ici -->
+                    <img id="table"  src="images/tableau.png" alt="Votre image" width="100%" height="100%">
+                </div>
+        </div>
+        <div id="personnageChloé" class="ttitre">
+            <h2 class="tttitre"> 💗💗Personnage Chloé Montenat De Fays 💗💗</h2>
+        </div>
+        <div class="pageentière">
+            <div class="page11">
+                <div class="ligne11">
+                    <div class="cases">
+                        <div id="caqse"  class="case11">
+                            <p class="textefiche">Le trouble du spectre autistique se caractérise par des difficultés dans les interactions sociales, associées à des intérêts restreints  et des comportements répétés.</p>
+                        </div>
+                        <div id="caqse"  class="case11">
+                            <p class="textefiche">A savoir ! Il est difficile pour une personne Asperger de comprendre le langage non verbal ( haussement d’épaule, sourire las, etc...) et les données abstraites. Les expression idiomatiques ou imagées comme «  couper les cheveux en quatres » seront comprises au premier degré ! »</p>
+                        </div>
+                        <div id="caqse"  class="case11">
+                            <p class="textefiche">A savoir: 80 % des autistes ont deja subit du harcèlement scolaire</p>
+                        </div>
+                    </div>
+                    <div class="element22">
+                        <img src="images/chloe.png" width="500px">
+                    </div>
+                </div>
+                
+                <div id="caqse"  class="ligne22">
+                    <h2 class="tttitre" >Autisme Asperger et travail en équipe</h2>
+                    <p class="textefiche">Privilégier les consignes par écrit
+                        confier des tâches précises, d’établir un plan de travail clairement défini,avec des objectifs précis et réalisables. Le flou, l’ambiguïté, les changements dedernière minute les déstabilise.
+                        Anticiper au maximum leur agenda, planifier ce qui peut l’être, et éviter les modifications de dernière minute
+                        Hiérarchiser clairement leurs priorités et les encadrer de façon structurée
+                        Leur permettre de travailler dans un environnement calme
+                        Accepter leurs remarques parfois « crues », et comprendre qu’ils sont incapables d’exprimer leur pensée de façon nuancée
+                        Au contraire, être nuancé pour leur formuler des reproches, et être généreux en encouragements
+                    </p>
+                </div>
+            </div>
+            <div class="page11">
+                <div id="caqse"  class="element11">
+                    <h2 class="tttitre">Super pouvoir du personnage : 🔋 🚀🛸</h2>
+                    <p class="textefiche">Créativité
+                        Personnification des objets ( parle à son serveur)
+                        Persévérance ( Capacité à travailler énormément hors mode échec)
+                        Fidèle 
+                        Prend la personnalité de tout ce qu’elle voit
+                        </p>
+                </div>
+                <div class="ligne11">
+                    <div class="casses">
+                        <div id="caqse"  class="casse11">
+                            <h2 class="tttitre">Qualités du personnage :</h2>
+                            <p class="textefiche">
+                                Perfectionniste 
+                                Sensibilité aux détails
+                                Droiture 
+                                Pensée analytique
+                                Logique indéniable
+                                Mémoire extraordinaire après acquisition des données de bases
+                                Objectivité et honnêteté
+                            </p>
+                        </div>
+                        <div id="caqse"  class="casse22">
+                            <h2 class="tttitre">Points forts 💪</h2>
+                        </div>
+                    </div>
+                    <div id="caqse"  class="text1">
+                        <h2 class="tttitre">Faiblesses 🤕</h2>
+                        <p class="textefiche">
+                            Prend en paramètre une fonction à la fois. ( travaille mieux en petite tâche)
+                            Fatigabilité importante face aux difficultés.
+                            Ne supporte pas les bruits forts.
+                            Pas de variateur sur l’humeur, bouton on/off. 
+                            dysgraphie (trouble qui affecte l’écriture dans son tracé.)
+                            </p>
+                    </div>
+                </div>
+                <div id="caqse"  class="element33">
+                    <p class="textefiche">Une personne atteinte du SA n’aime pas l’échec et va tout faire pour tenter de réussir tout ce qu’elle entreprend. Elle est donc persévérante. Elle dit ce qu’elle pense, n’a pas ou peu de préjugés (racisme, sexisme…). Elle peut évoluer, compenser ses manques et améliorer ses comportements si son entourage l’aide et si on lui en donne les moyens.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
